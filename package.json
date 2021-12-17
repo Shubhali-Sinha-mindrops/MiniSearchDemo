@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --watch --mode=development",
-    "build": "webpack --mode=production && yarn copy-to-docs && yarn gzip-data",
+    "build": "src -d build",
     "copy-to-docs": "mkdir -p ../docs/examples && cp ./{dist/app.js,index.html,billboard_1965-2015.json} ../docs/examples",
     "gzip-data": "gzip < ../docs/examples/billboard_1965-2015.json > ../docs/examples/billboard_1965-2015.json.gz"
   },
