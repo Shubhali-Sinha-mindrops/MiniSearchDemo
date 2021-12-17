@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --watch --mode=development",
-    "build": "babel src -d lib",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     "copy-to-docs": "mkdir -p ../docs/examples && cp ./{dist/app.js,index.html,billboard_1965-2015.json} ../docs/examples",
     "gzip-data": "gzip < ../docs/examples/billboard_1965-2015.json > ../docs/examples/billboard_1965-2015.json.gz"
   },
